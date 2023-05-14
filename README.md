@@ -15,7 +15,7 @@ docker compose up -d
 ## Stop Docker
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Access to PHP Container
@@ -27,5 +27,5 @@ open http://localhost:8080
 ## Access to MySQL Container
 
 ```bash
-docker-compose exec db mysql -u root -p
+docker compose exec database mysql -u {{username}} -p
 ```
