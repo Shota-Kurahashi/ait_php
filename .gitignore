@@ -1,0 +1,14 @@
+# .gitignore
+.dockerignore
+.dockerenv
+
+# Docker Compose logs
+*.log.*
+
+# Docker volumes
+docker/db/*
+!docker/db/my.cnf
+
+
+# Ignore .env file containing environment variables
+.env
