@@ -1,16 +1,18 @@
 version: "3"
 
 services:
-  php:
+  php7.4:
     container_name: php7.4
-    build: ./docker/app
+    build:
+      context: ./docker/app
+      dockerfile: Dockerfile
     volumes:
       - ./src:/var/www/html
     ports:
       - 8080:80
     depends_on:
-      - db
-  db:
+      - database
+  database:
     container_name: mariadb
     image: mariadb:latest
     environment:

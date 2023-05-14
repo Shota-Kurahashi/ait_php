@@ -1,9 +1,15 @@
-# PHP7.4 By Docker
+# PHP7.4 and MariaDB By Docker
+
+## Create Data Folder
+
+```bash
+mkdir ./docker/db/data
+```
 
 ## Start Docker
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Stop Docker
@@ -18,10 +24,8 @@ docker-compose down
 open http://localhost:8080
 ```
 
-````
-
 ## Access to MySQL Container
 
 ```bash
 docker-compose exec db mysql -u root -p
-````
+```
