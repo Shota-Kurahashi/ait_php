@@ -18,7 +18,7 @@ docker compose up -d
 docker compose down
 ```
 
-## Access to PHP Container
+## Open Localhost
 
 ```bash
 open http://localhost:8080
