@@ -13,4 +13,27 @@ docker/db/*
 # Ignore .env file containing environment variables
 .env
 
-Section77
+
+*.log
+
+latex-output
+
+*.bst
+
+*.bbl
+
+*.blg
+
+*.bib
+
+*.pdf
+
+*.dvi
+
+*.sty
+
+*.cls
+
+*.aux
+
+*.gz
